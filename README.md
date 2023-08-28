@@ -51,8 +51,20 @@ Para ficar mais fácil, alteramos o scripts do storybook no package de docs, par
 Podemos configurar o darkTheme do Storybook. Para isso, adicionamos o background no preview.js, dentro de .Storybook. <br />
 
 6- Para configurar a font da aplicação, crie o arquivo preview-head.html e adicione dentro do script. <br />
-7- Criamos a pasta pages, dentro de src, para separar a documentação. No arquivo main, precisamos atualizar/adicionar o caminho para o reconheimento do storybook.  
+7- Criamos a pasta pages, dentro de src, para separar a documentação. No arquivo main, precisamos atualizar/adicionar o caminho para o reconhecimento do storybook. <br /> 
+8- Como está sendo configurado separadamente, para adicionarmos os tokens, criamos a pasta dentro de pages. <br />
+9- Para melhor exibição, dentro de src, crie a pasta de components e adicione a exibição no arquivo tsx. <br />
+10- Como estamos usando cores claras, para não ficar difícil de ler na configuração atual do ColorsGrid, importamos a dependência polished - `npm i polished` - em docs. <br />
+11- Para evitar erros do typescript, importe a configuração no package.json de docs e adicione o arquivo de configuração. <br />
 
+*Configurar o turbo repo*
 
+O turbo repo serve para conseguirmos executar os scripts ao mesmo tempo, de todos os pacotes. Ajuda a acelerar o processo de build da aplicação, guardando um cache local. 
+
+É necessário estar com o git iniciado. 
+
+1- Na raiz do projeto, adicione o turbo, `npm i turbo@latest -D` <br />
+2- Adicione o arquivo turbo.json <br />
+3- No packege.json da matriz, adicione os scripts. 
 
 Notion sobre atualização do storybook nas notas e wpp. 
