@@ -1,0 +1,4 @@
+{
+  "extends": "@ignite-ui_g/ts-config/base.json",
+  "include": ["src"]
+}
