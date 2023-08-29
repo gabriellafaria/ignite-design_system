@@ -4,6 +4,9 @@ import { themes } from '@storybook/theming'
 
 const preview = {
   parameters: {
+    docs: {
+      theme: themes.dark
+    },
     backgrounds: {
       default: 'dark',
       values: [
@@ -24,10 +27,7 @@ const preview = {
         date: /Date$/,
       },
     },
-  },
-  docs: {
-    theme: themes.dark
-  },
+  }
 };
 
 export default preview;
