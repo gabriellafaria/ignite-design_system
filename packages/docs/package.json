@@ -26,10 +26,11 @@
     "vite": "^4.4.9"
   },
   "dependencies": {
+    "@ignite-ui_g/eslint-config": "*",
     "@ignite-ui_g/react": "*",
     "@ignite-ui_g/tokens": "*",
     "@ignite-ui_g/ts-config": "*",
-    "@ignite-ui_g/eslint-config": "*",
+    "polished": "^4.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }
