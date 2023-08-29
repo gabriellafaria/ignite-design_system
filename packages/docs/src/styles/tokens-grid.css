@@ -7,12 +7,12 @@
 
 .tokens-grid thead th {
   padding: 0.75rem 1rem;
-  text-align: center;
+  text-align: left;
 }
 
 .tokens-grid tbody td {
   padding: 0.75rem 1rem;
-  color: #CCC;
+  color: #ccc;
 }
 
 .tokens-grid tbody td:first-child {
@@ -25,6 +25,6 @@
   border-bottom-right-radius: 8px;
 }
 
-.tokens-grid tbody tr:nth-child(even) {
+.tokens-grid tbody tr:nth-child(even) td {
   background: #444;
 }
