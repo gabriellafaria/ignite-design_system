@@ -8,6 +8,13 @@ export default {
     src: 'https://github.com/gabriellafaria.png',
     alt: 'Gabriella Faria',
   },
+  argTypes: {
+    src: {
+      control: {
+        type: 'text',
+      },
+    },
+  },
 } as Meta<AvatarProps>
 
 export const Primary: StoryObj<AvatarProps> = {}
