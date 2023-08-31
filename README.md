@@ -67,4 +67,25 @@ O turbo repo serve para conseguirmos executar os scripts ao mesmo tempo, de todo
 2- Adicione o arquivo turbo.json <br />
 3- No packege.json da matriz, adicione os scripts. 
 
+*Para realizar o deploy no storybook*
+
+1- Instalamos o storybook deployer, na pasta docs, `npm i @storybook/storybook-deployer --save-dev`. <br />
+2- Adicione o script `"deploy-storybook": "storybook-to-ghpages"` no package de docs. <br />
+3- Na raiz do projeto, crie a pasta .github e, dentro dela, workflows. <br />
+4- Em workflows, crie o arquivo *deploy-docks.yml* <br />
+5- Atualize o gitHub. <br />
+6- Após o deploy no actions do gitHub, habilite o gitpages com a nova branch criada no deploy, normalmente, gh-pages. <br />
+7- No main.js do storybook, é necessário acrescentar a configuração do vite. 
+
+*Configuração Changesets*
+
+1- O pacote para instalação é o `npm i @changesets/cli -D`, na raiz do projeto. <br />
+2- Inicie o pacote, `npx changeset init`, e será criada a pasta .changeset. <br /> 
+3- No config.json da pasta, altere o acesso para público - será publicado no npm. <br />
+4- No package da raiz, adicione os scripts para o changeset. <br />
+5- Com o comando `npm run changeset` configurado, rode na raiz do projeto e selecione, com espaço, o pacote do react. Informe qual foi o resumo da alteração. <br />
+6- Após a seleção, registramos a alteração da versão com o comando `npm run version-packages`. <br />
+
+
+
 Notion sobre atualização do storybook nas notas e wpp. 
