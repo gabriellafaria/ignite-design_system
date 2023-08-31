@@ -1,4 +1,5 @@
 import { join, dirname } from "path";
+import { config } from "process";
 
 /**
  * This function is used to resolve the absolute path of a package.
@@ -28,5 +29,11 @@ const config = {
   docs: {
     autodocs: true,
   },
+  viteFinal: (config, { configType }) => {
+    if (configType === 'PRODUCTION') {
+      config.base = '/ignite-design_system/'
+    }
+    return config
+  }
 };
 export default config;
