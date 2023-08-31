@@ -29,11 +29,11 @@ const config = {
   docs: {
     autodocs: true,
   },
-  viteFinal: (config, { configType }) => {
+  viteFinal: (vConfig, { configType }) => {
     if (configType === 'PRODUCTION') {
-      config.base = '/ignite-design_system/'
+      vConfig.base = '/ignite-design_system/'
     }
-    return config
+    return vConfig
   }
 };
 export default config;
